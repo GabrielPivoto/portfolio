@@ -38,14 +38,7 @@ const About = () => {
                         <Card style={{ rotate: "-5deg", top: "43%", left: "1%" }} image="assets/logos/spring-icon.svg" containerRef={grid2Container} />
                     </div>
                 </div>
-                <div className="grid-black-color grid-3">
-                    <div className="z-10 w-[50%]">
-                        <p className="headtext">Time Zone</p>
-                        <p className="subtext">I'm based in Brazil</p>
-                    </div>
-                </div>
-                <div className="grid-special-color grid-4"></div>
-                <div className="grid-default-color grid-5"></div>
+                <div className="grid-special-color grid-3"></div>
             </div>
         </section>
     )
