@@ -12,17 +12,15 @@ const HeroText = () => {
     }
 
     return (
-        <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
-            {/*Desktop view */}
-            <div className="flex-col hidden md:flex c-space">
-                <motion.h1 className="text-4xl font-medium"
-                    variants={variants}
-                    initial="hidden"
-                    animate="visible"
-                    transition={{ delay: 1 }}
-                >{greeting}</motion.h1>
-                <div className="flex flex-col items-start">
-                    <motion.p className="text-5xl font-medium text-neutral-300"
+        <div className="z-10 mt-20 md:mt-40 rounded-3xl bg-clip-text">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div className="text-center md:text-left">
+                    <motion.h1 className="text-4xl font-medium"
+                        variants={variants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 1 }}>{greeting}</motion.h1>
+                    <motion.p className="text-5xl font-medium text-neutral-300 mt-4"
                         variants={variants}
                         initial="hidden"
                         animate="visible"
@@ -32,41 +30,23 @@ const HeroText = () => {
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.5 }}>
-                        <FlipWords words={words} className="font-black text-white text-8xl" />
+                        <FlipWords words={words} className="font-black text-white text-6xl md:text-8xl mt-4" />
                     </motion.div>
-                    <motion.p className="text-4xl font-medium text-neutral-300"
+                    <motion.p className="text-4xl font-medium text-neutral-300 mt-4"
                         variants={variants}
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.8 }}>{solutions}</motion.p>
                 </div>
-            </div>
-            {/* Mobile view */}
-            <div className="flex- flex-col space-y-6 md:hidden">
-                <motion.p className="text-4xl font-medium"
+                <motion.img
+                    src="https://avatars.githubusercontent.com/u/65688445?v=4"
+                    alt="profilePicture"
+                    className="w-40 h-40 md:w-60 md:h-60 rounded-full border-4 border-white z-50 mt-8 md:mt-0"
                     variants={variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{ delay: 1 }}>{greeting}</motion.p>
-                <div>
-                    <motion.p className="text-5xl font-black text-neutral-300"
-                        variants={variants}
-                        initial="hidden"
-                        animate="visible"
-                        transition={{ delay: 1.2 }}>Building</motion.p>
-                    <motion.div
-                        variants={variants}
-                        initial="hidden"
-                        animate="visible"
-                        transition={{ delay: 1.5 }}>
-                        <FlipWords words={words} className="font-bold text-white text-7xl" />
-                    </motion.div>
-                    <motion.p className="text-4xl font-black text-neutral-300"
-                        variants={variants}
-                        initial="hidden"
-                        animate="visible"
-                        transition={{ delay: 1.8 }}>{solutions}</motion.p>
-                </div>
+                    transition={{ delay: 2.0 }}
+                />
             </div>
         </div>
     )
