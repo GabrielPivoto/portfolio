@@ -17,7 +17,7 @@ const Hero = () => {
             <motion.img
                 src="https://avatars.githubusercontent.com/u/65688445?v=4"
                 alt="profilePicture"
-                className="absolute top-30 right-95 w-70 h-70 rounded-full border-4 border-white z-50"
+                className="absolute top-8 right-8 w-24 h-24 md:top-16 md:right-16 md:w-40 md:h-40 rounded-full border-4 border-white z-50"
                 variants={variants}
                 initial="hidden"
                 animate="visible"
