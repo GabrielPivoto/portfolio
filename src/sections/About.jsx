@@ -43,9 +43,6 @@ const About = () => {
                         <p className="headtext">Time Zone</p>
                         <p className="subtext">I'm based in Brazil</p>
                     </div>
-                    <figure className="absolute left-[30%] top-[10%]">
-                        <Globe />
-                    </figure>
                 </div>
                 <div className="grid-special-color grid-4"></div>
                 <div className="grid-default-color grid-5"></div>
