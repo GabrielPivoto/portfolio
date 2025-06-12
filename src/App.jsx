@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Experiences from './sections/Experiences'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 const App = () => {
   return (
@@ -12,8 +13,7 @@ const App = () => {
       <About />
       <Experiences />
       <Contact />
-      <section className="min-h-screen" />
-      <section className="min-h-screen" />
+      <Footer />
     </div>
   )
 }

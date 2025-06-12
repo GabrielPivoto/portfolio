@@ -24,3 +24,16 @@ export const experiences = [
     ],
   },
 ];
+
+export const mySocials = [
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/gabriel-pivoto/",
+    icon: "/assets/socials/linkedIn.svg",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/gabriel.pivoto/",
+    icon: "/assets/socials/instagram.svg",
+  },
+];
